@@ -1,0 +1,29 @@
+[project]
+name = "3d-models-in-python"
+version = "0.1.0"
+description = "3d modeling with python :cheering noises:"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "build123d",
+]
+
+[dependency-groups]
+dev = [
+    "notebook",
+    "jupyter-cadquery",
+    "sidecar",
+]
+
+[tool.uv]
+constraint-dependencies = [
+    "cadquery-ocp<7.9",
+    "py-lib3mf==2.3.1",
+]
+
+[tool.pyright]
+reportPrivateImportUsage = "none"
+reportWildcardImportFromLibrary = "none"
+
+[tool.ruff.lint]
+ignore = ["F403", "F405"]
