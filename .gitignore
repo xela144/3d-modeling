@@ -1,4 +1,8 @@
+# model artifacts
 **/*.3mf
 **/*.step
 **/*.stl
 
+# python artifacts
+**/.ipynb_checkpoints/
+**/__pycache__/
